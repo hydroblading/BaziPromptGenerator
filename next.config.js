@@ -1,9 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  // Remove standalone output for better compatibility
-  // output: 'standalone',
-  // Ensure proper server configuration
+  // Ensure proper server configuration for Vercel
   outputFileTracingIncludes: {
     '/api/**/*': ['./src/**/*'],
   },
